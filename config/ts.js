@@ -2,8 +2,9 @@
  * @link https://typescript-eslint.io/rules
  */
 module.exports = {
-  rules: [
+  rules: {
     // ----- ----- ----- ----- ----- -----
+    // Styles
 
     /**
      * @link https://typescript-eslint.io/rules/indent
@@ -119,6 +120,7 @@ module.exports = {
     ],
 
     // ----- ----- ----- ----- ----- -----
+    // Security
 
     /**
      * @link https://typescript-eslint.io/rules/no-shadow
@@ -167,7 +169,7 @@ module.exports = {
     /**
      * @link https://typescript-eslint.io/rules/no-empty-interface
      */
-    '@typescript-eslint/no-empty-interface': ['error',
+    '@typescript-eslint/no-empty-interface': ['warn',
       {
         allowSingleExtends: true
       }
@@ -183,7 +185,13 @@ module.exports = {
      */
     '@typescript-eslint/no-unnecessary-condition': 'warn',
 
+    /**
+     * @link https://typescript-eslint.io/rules/no-unsafe-member-access
+     */
+    "@typescript-eslint/no-unsafe-member-access": "warn",
+
     // ----- ----- ----- ----- ----- -----
+    // Readability
 
     /**
      * @link https://typescript-eslint.io/rules/prefer-optional-chain
@@ -204,5 +212,5 @@ module.exports = {
         allowTypedFunctionExpressions: true
       }
     ]
-  ]
+  }
 };
