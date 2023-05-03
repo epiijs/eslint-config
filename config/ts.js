@@ -45,6 +45,22 @@ module.exports = {
     ],
 
     /**
+     * @link https://typescript-eslint.io/rules/semi
+     */
+    '@typescript-eslint/semi': 'error',
+
+    /**
+     * @link https://typescript-eslint.io/rules/space-before-function-paren
+     */
+    "@typescript-eslint/space-before-function-paren": ['error',
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],  
+
+    /**
      * @link https://typescript-eslint.io/rules/space-before-blocks
      */
     '@typescript-eslint/space-before-blocks': ['error'],
