@@ -89,7 +89,7 @@ module.exports = {
     /**
      * @link https://typescript-eslint.io/rules/naming-convention
      */
-    '@typescript-eslint/naming-convention': ['error',
+    '@typescript-eslint/naming-convention': ['warn',
       {
         selector: 'function',
         format: ['strictCamelCase', 'StrictPascalCase'],
@@ -121,8 +121,7 @@ module.exports = {
       },
       {
         selector: 'typeAlias',
-        format: ['StrictPascalCase'],
-        prefix: ['T']
+        format: ['StrictPascalCase']
       },
       {
         selector: 'enumMember',
