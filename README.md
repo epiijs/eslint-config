@@ -22,7 +22,7 @@ npm install --save-dev @epiijs/eslint-config@latest eslint@latest
 
 2. Install `ESLint` extension in your `VSCode`.
 
-3. Create the eslint config file `.eslint.config.mjs`.
+3. Create the eslint config file `eslint.config.mjs`.
 
 ```mjs
 import config from '@epiijs/eslint-config';
