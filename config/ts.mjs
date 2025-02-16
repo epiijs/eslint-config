@@ -82,7 +82,12 @@ export default [{
     /**
      * @link https://typescript-eslint.io/rules/no-explicit-any
      */
-    '@typescript-eslint/no-explicit-any': "warn",
+    '@typescript-eslint/no-explicit-any': 'warn',
+
+    /**
+     * @link https://typescript-eslint.io/rules/no-floating-promises
+     */
+    '@typescript-eslint/no-floating-promises': 'warn',
 
     /**
      * @link https://typescript-eslint.io/rules/no-non-null-assertion
