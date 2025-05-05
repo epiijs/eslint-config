@@ -80,6 +80,11 @@ export default [{
     ],
 
     /**
+     * @link https://typescript-eslint.io/rules/no-empty-object-type
+     */
+    '@typescript-eslint/no-empty-object-type': ['warn'],
+
+    /**
      * @link https://typescript-eslint.io/rules/no-explicit-any
      */
     '@typescript-eslint/no-explicit-any': 'warn',
