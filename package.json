@@ -1,6 +1,6 @@
 {
   "name": "@epiijs/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Just another eslint config for @epiijs.",
   "type": "module",
   "main": "index.mjs",
@@ -11,13 +11,13 @@
   "author": "Sartrey Lee <sartrey@163.com> (https://sartrey.cn)",
   "license": "MIT",
   "dependencies": {
-    "@eslint/js": "^9.20.0",
-    "@stylistic/eslint-plugin": "^3.1.0",
-    "eslint-import-resolver-typescript": "^3.8.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "typescript-eslint": "^8.24.0"
+    "@eslint/js": "9.39.4",
+    "@stylistic/eslint-plugin": "3.1.0",
+    "eslint-import-resolver-typescript": "3.10.1",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "typescript-eslint": "8.57.2"
   },
   "peerDependencies": {
     "eslint": ">= 9.0.0"
