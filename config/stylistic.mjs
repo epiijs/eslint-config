@@ -84,8 +84,7 @@ export default [{
      */
     '@stylistic/no-extra-parens': ['error', 'all',
       {
-        nestedBinaryExpressions: false,
-        enforceForArrowConditionals: true
+        nestedBinaryExpressions: false
       }
     ],
 

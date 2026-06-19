@@ -5,7 +5,7 @@ This package combines many eslint rules for `epiijs` styled codes as an extensib
 
 `1.x` can only work with `eslint@9`.
 
-These following recommended rules are enabled.
+The following recommended rules are enabled.
 * by `eslint` 
 * by `typescript-eslint`
 * about code style by `epiijs`

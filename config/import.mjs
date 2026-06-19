@@ -1,30 +1,31 @@
-import pluginForImport from 'eslint-plugin-import';
+import pluginForSimpleImportSort from 'eslint-plugin-simple-import-sort';
 
 /**
- * @link https://github.com/import-js/eslint-plugin-import
+ * @link https://github.com/lydell/eslint-plugin-simple-import-sort
  */
 export default [{
-  files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
-
-  extends: [
-    pluginForImport.flatConfigs.recommended,
-    pluginForImport.flatConfigs.typescript
-  ],
-
-  settings: {
-    // make plugin to resolve .js in esm .ts
-    // require eslint-import-resolver-typescript
-    'import/resolver': {
-      typescript: true,
-      node: true
-    }
+  plugins: {
+    'simple-import-sort': pluginForSimpleImportSort
   },
 
   rules: {
-    'import/order': ['error',
-      {
-        'newlines-between': 'always'
-      }
-    ]
+    'simple-import-sort/imports': ['error', {
+      groups: [
+        // side effect imports
+        ['^\\u0000'],
+        // node builtins
+        ['^node:'],
+        // packages (third-party)
+        ['^@?\\w'],
+        // absolute paths
+        ['^/'],
+        // relative paths (parent)
+        ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+        // relative paths (sibling/current)
+        ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$']
+      ]
+    }],
+
+    'simple-import-sort/exports': 'error'
   }
 }];
