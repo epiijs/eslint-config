@@ -19,7 +19,7 @@ export default [{
      */
     '@stylistic/brace-style': ['error', '1tbs',
       {
-        allowSingleLine: true
+        allowSingleLine: false
       }
     ],
 
@@ -85,6 +85,16 @@ export default [{
     '@stylistic/no-extra-parens': ['error', 'all',
       {
         nestedBinaryExpressions: false
+      }
+    ],
+
+    /**
+     * @link https://eslint.style/rules/default/object-curly-newline
+     */
+    '@stylistic/object-curly-newline': ['error',
+      {
+        ImportDeclaration: { minProperties: 2, consistent: true },
+        ExportDeclaration: { minProperties: 2, consistent: true }
       }
     ],
 
